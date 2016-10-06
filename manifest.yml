@@ -1,0 +1,10 @@
+---
+applications:
+- path: target/demo-0.0.1-SNAPSHOT.war
+  name: spring-boot-demo
+  host: spring-boot-demo-${random-word}
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  disk_quota: 1024M
+  buildpack: liberty-for-java
